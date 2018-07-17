@@ -1,0 +1,44 @@
+{
+  "name": "phaser-boilerplate",
+  "version": "0.0.1",
+  "description": "A starting point for a 2D multiplayer game with Phaser 3. Includes server, networking, etc.",
+  "keywords": [
+    "rpg"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/node-dev .",
+    "test": "mocha server/**/*.spec.js server/**/**/*.spec.js --exit",
+    "watch": "mocha -w server/**/*.spec.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "bdickason",
+  "contributors": [
+    {
+      "name": "bdickason",
+      "email": "dickason@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bdickason/phaser-boilerplate.git"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-gameloop": "^0.1.4",
+    "phaser": "^3.11.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "node-dev": "^3.1.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
